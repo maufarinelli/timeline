@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        html, body, div, span, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        abbr, address, cite, code,
+        del, dfn, em, img, ins, kbd, q, samp,
+        small, strong, sub, sup, var,
+        b, i,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section, summary,
+        time, mark, audio, video {
+            margin:0;
+            padding:0;
+            border:0;
+            outline:0;
+            font-size:100%;
+            vertical-align:baseline;
+            background:transparent;
+        }
+
+        body {
+            line-height:1;
+        }
+
+        article,aside,details,figcaption,figure,
+        footer,header,hgroup,menu,nav,section {
+            display:block;
+        }
+
+        nav ul {
+            list-style:none;
+        }
+
+        blockquote, q {
+            quotes:none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content:'';
+            content:none;
+        }
+
+        a {
+            margin:0;
+            padding:0;
+            font-size:100%;
+            vertical-align:baseline;
+            background:transparent;
+        }
+
+        /* change colours to suit your needs */
+        ins {
+            background-color:#ff9;
+            color:#000;
+            text-decoration:none;
+        }
+
+        /* change colours to suit your needs */
+        mark {
+            background-color:#ff9;
+            color:#000;
+            font-style:italic;
+            font-weight:bold;
+        }
+
+        del {
+            text-decoration: line-through;
+        }
+
+        abbr[title], dfn[title] {
+            border-bottom:1px dotted;
+            cursor:help;
+        }
+
+        table {
+            border-collapse:collapse;
+            border-spacing:0;
+        }
+
+        /* change border colour to suit your needs */
+        hr {
+            display:block;
+            height:1px;
+            border:0;
+            border-top:1px solid #cccccc;
+            margin:1em 0;
+            padding:0;
+        }
+
+        input, select {
+            vertical-align:middle;
+        }
+
+        #wrapper {
+            width: 940px;
+            margin: 0 auto;
+        }
+
+        .timeline-line {
+            width: 100%;
+            height: 10px;
+            margin-top: 300px;
+            margin-bottom: -22px;
+
+            border-radius: 10px;
+            background-color: #00467e;
+        }
+
+        .timeline-list {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 33px;
+            height: 33px;
+
+            list-style: none;
+
+            border-radius: 50%;
+            border: 1px solid #00467e;
+            background-color: #00467e;
+
+            cursor: pointer;
+        }
+
+        .timeline-item-box {
+            position: absolute;
+            top: -240px;
+            left: -136px;
+
+            width: 300px;
+            height: 190px;
+
+            opacity: 0;
+
+            border-radius: 15px;
+            border: 8px solid #00467e;
+
+            color: #FFF;
+
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+
+        .timeline-item-box p {
+            position: absolute;
+            bottom: 0px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .timeline-item-box:after {
+            content: "";
+            position: absolute;
+            left: 130px;
+            bottom: -22px;
+
+            width: 0;
+            height: 0;
+
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid #00467e;
+        }
+
+        .timeline-item:hover:before{
+            content: " ";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+
+            width: 45px;
+            height: 45px;
+
+            z-index: -1;
+
+            border: 4px solid #00467e;
+            border-radius: 50%;
+        }
+
+        .timeline-item:hover > .timeline-item-box {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+   <section id="wrapper">
+        <div class="timeline-line"></div>
+        <ul class="timeline-list">
+            <li class="timeline-item">
+                <div class="timeline-item-box">
+                    <p>Profitez du jeune âge et de l’excellent état de santé de votre enfant pour lui procurer une protection qui le suivra jusqu’à l’âge adulte et même toute sa vie.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-item-box">
+                    <p>Le régime enregistré d’épargne-études (REEE) est le véhicule financier par excellence pour accumuler des sommes en vue des études postsecondaires d’un enfant.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-item-box">
+                    <p>Dotez votre famille des protections nécessaires pour vivre cette nouvelle aventure en toute confiance.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-item-box">
+                    <p>L’espérance de vie ne cesse de s’accroître, et le temps dont les gens disposent à leur retraite aussi. C'est pourquoi il est préférable de planifier dès aujourd’hui votre retraite.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-item-box">
+                    <p>Vous avez investi tant d'efforts et d'économies pour assurer votre sécurité financière, ne laissez pas un décès mettre en péril vos acquis et l'avenir de vos proches.</p>
+                </div>
+            </li>
+        </ul>
+   </section>
+</body>
+</html>
