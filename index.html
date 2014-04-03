@@ -157,7 +157,10 @@
             position: absolute;
             bottom: 0px;
             padding: 10px;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.6);
+
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
         }
 
         .timeline-item-box:after {
@@ -192,6 +195,39 @@
         .timeline-item:hover > .timeline-item-box {
             opacity: 1;
         }
+
+        .timeline-item-box--naissance {
+            left: -15px;
+            background: url(http://avcf.agencevia.ca/wp-content/uploads/2014/03/naissance.jpg) 0 0 no-repeat;
+        }
+
+        .timeline-item-box--naissance:after {
+            left: 10px;
+        }
+
+        .timeline-item-box--etudes {
+            background: url(http://avcf.agencevia.ca/wp-content/uploads/2014/03/etudes.jpg) 0 0 no-repeat;
+        }
+
+        .timeline-item-box--famille {
+            background: url(http://avcf.agencevia.ca/wp-content/uploads/2014/03/famille.jpg) 0 0 no-repeat;
+        }
+
+        .timeline-item-box--retraite {
+            background: url(http://avcf.agencevia.ca/wp-content/uploads/2014/03/golf.jpg) 0 0 no-repeat;
+        }
+
+        .timeline-item-box--deces {
+            left: auto;
+            right: -15px;
+            background: url(http://avcf.agencevia.ca/wp-content/uploads/2014/04/deces.jpg) 0 0 no-repeat;
+        }
+
+        .timeline-item-box--deces:after {
+            left: auto;
+            right: 10px;
+        }
+
     </style>
 </head>
 
@@ -200,27 +236,27 @@
         <div class="timeline-line"></div>
         <ul class="timeline-list">
             <li class="timeline-item">
-                <div class="timeline-item-box">
+                <div class="timeline-item-box timeline-item-box--naissance">
                     <p>Profitez du jeune âge et de l’excellent état de santé de votre enfant pour lui procurer une protection qui le suivra jusqu’à l’âge adulte et même toute sa vie.</p>
                 </div>
             </li>
             <li class="timeline-item">
-                <div class="timeline-item-box">
+                <div class="timeline-item-box timeline-item-box--etudes">
                     <p>Le régime enregistré d’épargne-études (REEE) est le véhicule financier par excellence pour accumuler des sommes en vue des études postsecondaires d’un enfant.</p>
                 </div>
             </li>
             <li class="timeline-item">
-                <div class="timeline-item-box">
+                <div class="timeline-item-box timeline-item-box--famille">
                     <p>Dotez votre famille des protections nécessaires pour vivre cette nouvelle aventure en toute confiance.</p>
                 </div>
             </li>
             <li class="timeline-item">
-                <div class="timeline-item-box">
+                <div class="timeline-item-box timeline-item-box--retraite">
                     <p>L’espérance de vie ne cesse de s’accroître, et le temps dont les gens disposent à leur retraite aussi. C'est pourquoi il est préférable de planifier dès aujourd’hui votre retraite.</p>
                 </div>
             </li>
             <li class="timeline-item">
-                <div class="timeline-item-box">
+                <div class="timeline-item-box timeline-item-box--deces">
                     <p>Vous avez investi tant d'efforts et d'économies pour assurer votre sécurité financière, ne laissez pas un décès mettre en péril vos acquis et l'avenir de vos proches.</p>
                 </div>
             </li>
