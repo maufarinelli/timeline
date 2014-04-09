@@ -1,4 +1,4 @@
-<section id="wrapper">
+<section id="timeline-wrapper">
     <div class="timeline-line"></div>
     <ul class="timeline-list">
         <li class="timeline-item">

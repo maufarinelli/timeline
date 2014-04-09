@@ -100,9 +100,11 @@
 
         /* Wrapper to simulate the website
         ======================================== */
-        #wrapper {
+        #timeline-wrapper {
             width: 940px;
-            margin: 0 auto;
+            margin: 0 auto 75px;
+
+            font-family: Arial,  sans-serif;
         }
 
         /* The timeline line
@@ -165,23 +167,23 @@
 
         /* timeline item title modifiers */
         .timeline-item--naissance {
-            left: -13px;
+            left: -21px;
         }
 
         .timeline-item--etudes {
-            left: -4px;
-        }
-
-        .timeline-item--famille {
-            left: -5px;
-        }
-
-        .timeline-item--retraite {
             left: -7px;
         }
 
+        .timeline-item--famille {
+            left: -9px;
+        }
+
+        .timeline-item--retraite {
+            left: -11px;
+        }
+
         .timeline-item--deces {
-            left: -3px;
+            left: -8px;
         }
 
         .timeline-item:hover > .timeline-item-title {
@@ -278,7 +280,7 @@
 </head>
 
 <body>
-   <section id="wrapper">
+   <section id="timeline-wrapper">
         <div class="timeline-line"></div>
         <ul class="timeline-list">
             <li class="timeline-item">
